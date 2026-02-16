@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+    <list type="common" keysrequired="no" keyedOnUser="no" />
+    <displayfields>
+        <field name="Log_Type" width="300" />
+    </displayfields>
+    <valuefields>
+        <field name="Log_Type" fname="Log_Type" />
+        <field name="Log_Type_ID" fname="Log_Type_ID" />
+    </valuefields>
+    <sql>
+        <str name="Select" value="select Log_Type_id, Log_Type from somersetcr.Log_Type " />
+        <str name="And" value="" />
+        <str name="Order" value=" order by Log_Type_ID" />
+    </sql>
+</list>
+

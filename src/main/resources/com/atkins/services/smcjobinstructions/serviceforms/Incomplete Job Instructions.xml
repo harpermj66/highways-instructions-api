@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServiceForm>
+    <serviceform id="Somersetcr.IJI.01" type="Tabbed" export="Not Used Yet - yes, no" configLocation="Not Used Yet - config file for export of service" outputLocation="Not Used Yet - where the output oges">
+        <servicepage title="Incomplete Job Instructions" type="duallist" pageOrder="0" horizontalsplit="240">
+            <servicecomponent owner="somersetcr" componentOrder="0" title="Depots" type="list" table="somersetcr.Depot" refField="" packetrecordcount="200" maxrecordcount="500" idref="DEPOT_ID" updatekey="DEPOT_ID" sitekey="legacy" componentpropertiesfn="/com/atkins/services/smcjobinstructions/serviceforms/components/Depots.xml" requiresglobalkeys="yes" globalkeyname="location.selector" globalkeyselectorclasspath="com.atkins.framework.data.keyselectors.RunLocationSelector" parentcomponenttitle="" masteridref="" requiresAdditionalKeys="no" showOnlyCurrentUserRecords="no" implementsRecordLock="no" showNavigator="yes">
+                <commands reports="no" reload="no" create="no" delete="no" save="no" edit="no" help="no" search="yes" retrieve="no" quicksearch="no" total="no" />
+                <posts />
+                <nonposts />
+                <report reportName="Depots" type="CSV" available="yes" />
+            </servicecomponent>
+            <servicecomponent owner="" componentOrder="1" title="Incomplete Job Instructions" type="list" table="somersetcr.Incomplete_Job_Instructions" refField="" packetrecordcount="200" maxrecordcount="500" idref="JI_ID" updatekey="JI_ID" sitekey="legacy" componentpropertiesfn="/com/atkins/services/smcjobinstructions/serviceforms/components/Incomplete Job Instructions List.xml" requiresglobalkeys="no" globalkeyname="location.selector" globalkeyselectorclasspath="com.atkins.framework.data.keyselectors.RunLocationSelector" parentcomponenttitle="Depots" masteridref="DEPOT_ID" requiresAdditionalKeys="no" showOnlyCurrentUserRecords="no" implementsRecordLock="no" showNavigator="no">
+                <commands reports="no" reload="no" create="no" delete="no" save="no" edit="no" help="no" search="no" retrieve="no" quicksearch="no" total="no" />
+                <nonposts />
+                <report reportName="Incomplete Job Instructions" type="CSV" available="yes" />
+            </servicecomponent>
+        </servicepage>
+        <servicepage title="Incomplete Job Instruction Detail" type="singletabular" pageOrder="0">
+            <servicecomponent owner="" componentOrder="0" title="Job Instruction" type="tabular" table="somersetcr.Job_Instruction" refField="" packetrecordcount="200" maxrecordcount="500" idref="Job_Instruction_ID" updatekey="Job_Instruction_ID" sitekey="legacy" componentpropertiesfn="/com/atkins/services/smcjobinstructions/serviceforms/components/Job Instruction Detail By Area.xml" requiresglobalkeys="no" globalkeyname="location.selector" globalkeyselectorclasspath="com.atkins.framework.data.keyselectors.RunLocationSelector" parentcomponenttitle="Incomplete Job Instructions" masteridref="JI_ID" requiresAdditionalKeys="no" showOnlyCurrentUserRecords="no" implementsRecordLock="no" showNavigator="no">
+                <commands reports="no" reload="no" create="no" delete="no" save="yes" edit="yes" help="no" search="no" retrieve="no" quicksearch="no" total="no" />
+                <nonposts />
+                <report reportName="Job Instruction" type="CSV" available="yes" />
+            </servicecomponent>
+        </servicepage>
+    </serviceform>
+    <customreports />
+</ServiceForm>
+

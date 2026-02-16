@@ -23,8 +23,13 @@ dependencies {
     implementation("io.quarkus:quarkus-reactive-pg-client")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     implementation("io.quarkus:quarkus-arc")
-    testImplementation("io.quarkus:quarkus-junit")
+    implementation("io.quarkus:quarkus-oidc")
+    implementation("io.quarkus:quarkus-keycloak-authorization")
+    testImplementation("io.quarkus:quarkus-junit5-mockito")
+    testImplementation("io.quarkus:quarkus-junit5")
     testImplementation("io.rest-assured:rest-assured")
+    testImplementation("org.mockito.kotlin:mockito-kotlin:5.4.0")
+    testImplementation("io.quarkus:quarkus-test-vertx")
 }
 
 group = "com.vrs"

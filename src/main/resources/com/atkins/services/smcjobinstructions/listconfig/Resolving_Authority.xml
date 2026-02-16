@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+    <list type="common" keysrequired="no" keyedOnUser="no" />
+    <displayfields>
+        <field name="RESOLVING_AUTHORITY" width="400" />
+    </displayfields>
+    <valuefields>
+        <field name="RESOLVING_AUTHORITY" fname="res_auth" />
+        <field name="RESOLVING_AUTHORITY_ID" fname="RESOLVING_AUTHORITY_ID" />
+    </valuefields>
+    <sql>
+        <str name="Select" value="Select * from somersetcr.RESOLVING_AUTHORITY " />
+        <str name="And" value="" />
+        <str name="Order" value="order by RESOLVING_AUTHORITY " />
+    </sql>
+</list>
+

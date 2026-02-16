@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+    <masterkey keyname="Job_Instruction_ID" idref="Job_Instruction_ID" initialorderfield="Job_Instruction_ID" />
+    <deletes allow="no" />
+    <basicattributes caption="legacy component caption" screenid="legacy screen id" offsetheight="-1" nooffields="0" />
+</component>
+

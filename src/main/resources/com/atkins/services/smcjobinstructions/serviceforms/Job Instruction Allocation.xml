@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServiceForm>
+    <serviceform id="SMCR.JobAllocation.01" type="Tabbed" export="Not Used Yet - yes, no" configLocation="Not Used Yet - config file for export of service" outputLocation="Not Used Yet - where the output oges">
+        <servicepage title="Job Instructions" type="listtabular" pageOrder="0" horizontalsplit="290">
+            <servicecomponent owner="somersetcr" componentOrder="0" title="Job Instructions" type="list" table="somersetcr.job_instruction_allocation" refField="" packetrecordcount="200" maxrecordcount="500" idref="JI_ID" updatekey="JI_ID" sitekey="legacy" componentpropertiesfn="/com/atkins/services/smcjobinstructions/serviceforms/components/Job Instruction Allocation.xml" requiresglobalkeys="yes" globalkeyname="location.selector" globalkeyselectorclasspath="com.atkins.framework.data.keyselectors.RunLocationSelector" parentcomponenttitle="" masteridref="" requiresAdditionalKeys="no" showOnlyCurrentUserRecords="no" implementsRecordLock="no" showNavigator="yes" isView="Yes">
+                <commands reports="no" reload="no" create="no" delete="no" save="no" edit="no" help="no" search="yes" retrieve="no" quicksearch="no" total="no" />
+                <posts />
+                <nonposts />
+                <report reportName="Job Instructions" type="CSV" available="yes" />
+            </servicecomponent>
+            <servicecomponent owner="somersetcr" componentOrder="1" title="Gang Assignment" type="tabular" table="somersetcr.Gang_Assignment" refField="" packetrecordcount="200" maxrecordcount="500" idref="GANG_ASSIGNMENT_ID" updatekey="GANG_ASSIGNMENT_ID" sitekey="legacy" componentpropertiesfn="/com/atkins/services/smcjobinstructions/serviceforms/components/Gang Assignment Allocation.xml" requiresglobalkeys="no" globalkeyname="location.selector" globalkeyselectorclasspath="com.atkins.framework.data.keyselectors.RunLocationSelector" parentcomponenttitle="Job Instructions" masteridref="JI_ID" requiresAdditionalKeys="no" showOnlyCurrentUserRecords="no" implementsRecordLock="no" showNavigator="yes" isView="No">
+                <commands reports="no" reload="no" create="yes" delete="yes" save="yes" edit="yes" help="no" search="no" retrieve="no" quicksearch="no" total="no" />
+                <additionalcommands>
+                    <command name="CalculateProgrammedStartDate" disabledIcon="/images/ap_export_timesheets.png" inactiveIcon="/images/ap_export_timesheets.png" enabledIcon="/images/ap_export_timesheets_32.png" tooltip="Calculate, Recalculate Programmed Start Date" classPath="extensions.somersetcr.commands.CalculateProgrammedStartDate" />
+                </additionalcommands>
+                <posts>
+                    <post type="prepost" class="extensions.somersetcr.preposts.CheckCompletionNotes_1" />
+                    <post type="prepost" class="extensions.somersetcr.commands.CalculateProgrammedStartDate_1" />
+                </posts>
+                <nonposts />
+                <report reportName="Gang Assignment" type="CSV" available="yes" />
+            </servicecomponent>
+        </servicepage>
+    </serviceform>
+    <customreports />
+</ServiceForm>
+

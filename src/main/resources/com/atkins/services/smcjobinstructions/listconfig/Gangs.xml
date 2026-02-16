@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+    <list type="common" keysrequired="yes" keyedOnUser="no" />
+    <displayfields>
+        <field name="Gang" width="300" />
+    </displayfields>
+    <valuefields>
+        <field name="Gang" fname="Gang" />
+        <field name="Gang_ID" fname="Gang_ID" />
+        <field name="Gang_Vehicle_ID" fname="Gang_Vehicle_ID" />
+    </valuefields>
+    <filters>
+        <filter filterField="JI_ID" filterComponent="Job Instruction" filterComponentField="JI_ID" dataType="Number" value="" />
+    </filters>
+    <sql>
+        <str name="Select" value="select ji_id, gang, gang_vehicle_id, gang_name_id as gang_id from somersetcr.available_gangs" />
+        <str name="And" value="" />
+        <str name="Order" value="order by GANG" />
+    </sql>
+</list>
+

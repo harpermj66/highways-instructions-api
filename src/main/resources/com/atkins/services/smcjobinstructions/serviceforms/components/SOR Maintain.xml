@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+    <masterkey keyname="SOR_ID" idref="SOR_ID" initialorderfield="SOR_ID" />
+    <deletes allow="yes" />
+    <groupings>
+        <grouping caption="Schedule" height="0" nooffields="6" groupOrder="0" fontSize="-1" fontColor="" fontBold="Yes" groupType="Bold" />
+        <grouping caption="Creation Information" height="55" nooffields="2" groupOrder="1" fontSize="-1" fontColor="Default" fontBold="No" groupType="Bold" />
+        <grouping caption="Key Group" height="0" nooffields="1" groupOrder="2" fontSize="-1" fontColor="Default" fontBold="No" groupType="Bold" />
+    </groupings>
+    <basicattributes caption="legacy component caption" screenid="legacy screen id" offsetheight="-1" nooffields="9" />
+    <labelfields>
+        <labelfield caption="SOR Description" passFail="no" useLabel="yes" indexed="no" hint="" fname="SOR_DESCRIPTION" ftype="String" auto="no" lxpos="0" lypos="0" lgridwidth="1" type="TextField" fwidth="300" fheight="21" fxpos="1" fypos="0" fgridwidth="1" total="no" fieldOrder="0" width="255" nullable="yes" listfn="" listmasterkey="" />
+        <labelfield caption="SOR Code" passFail="no" useLabel="yes" indexed="no" hint="" fname="SOR_CODE" ftype="String" auto="no" lxpos="0" lypos="0" lgridwidth="1" type="TextField" fwidth="100" fheight="21" fxpos="1" fypos="0" fgridwidth="1" total="no" fieldOrder="1" width="10" nullable="no" listfn="" listmasterkey="" />
+        <labelfield caption="Unit of Measure" passFail="no" useLabel="yes" indexed="no" hint="" fname="UOM" ftype="String" auto="no" lxpos="0" lypos="0" lgridwidth="1" type="TextField" fwidth="90" fheight="21" fxpos="1" fypos="0" fgridwidth="1" total="no" fieldOrder="2" width="6" nullable="no" listfn="" listmasterkey="" />
+        <labelfield caption="Rate" passFail="no" useLabel="yes" indexed="no" hint="" fname="RATE" ftype="Number" auto="no" lxpos="0" lypos="0" lgridwidth="1" type="TextField" fwidth="80" fheight="21" fxpos="1" fypos="0" fgridwidth="1" total="no" fieldOrder="3" precision="10" scale="4" nullable="no" listfn="" listmasterkey="" />
+        <labelfield caption="Full Description" passFail="no" useLabel="yes" indexed="no" hint="" fname="SOR_DESCN" ftype="String" auto="no" lxpos="0" lypos="0" lgridwidth="1" type="TextField" fwidth="300" fheight="21" fxpos="1" fypos="0" fgridwidth="1" total="no" fieldOrder="4" width="255" nullable="yes" listfn="" listmasterkey="" />
+        <labelfield caption="Type (TM,RA,SOR)" passFail="no" useLabel="yes" indexed="no" hint="" fname="SOR_TYPE" ftype="String" auto="no" lxpos="0" lypos="0" lgridwidth="1" type="ScrollableLUTextField" fwidth="110" fheight="21" fxpos="1" fypos="0" fgridwidth="1" total="no" fieldOrder="5" width="3" nullable="no" listfn="/com/atkins/services/smcjobinstructions/listconfig/SOR Type TM RA SOR Lookup.xml" listmasterkey="" />
+        <labelfield caption="Date Created" passFail="no" useLabel="no" indexed="no" hint="" fname="DATE_CREATED" ftype="Date" auto="yes" lxpos="0" lypos="0" lgridwidth="1" type="NEDateTimeTextField" fwidth="120" fheight="21" fxpos="1" fypos="0" fgridwidth="1" total="no" fieldOrder="6" nullable="no" listfn="" listmasterkey="" />
+        <labelfield caption="Created By" passFail="no" useLabel="no" indexed="no" hint="" fname="CREATED_BY" ftype="String" auto="no" lxpos="2" lypos="0" lgridwidth="1" type="NETextField" fwidth="80" fheight="21" fxpos="3" fypos="0" fgridwidth="1" total="no" fieldOrder="7" width="25" nullable="no" listfn="" listmasterkey="" />
+        <labelfield caption="SOR_ID" passFail="no" useLabel="no" indexed="no" hint="" fname="SOR_ID" ftype="Number" auto="yes" lxpos="0" lypos="0" lgridwidth="1" type="HTextField" fwidth="100" fheight="21" fxpos="1" fypos="0" fgridwidth="1" total="no" fieldOrder="8" precision="10" scale="0" nullable="no" listfn="" listmasterkey="" />
+    </labelfields>
+</component>
+

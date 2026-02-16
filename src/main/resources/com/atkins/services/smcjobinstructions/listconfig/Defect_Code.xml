@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+    <list type="common" keysrequired="no" keyedOnUser="no" />
+    <displayfields>
+        <field name="Defect_Code" width="100" />
+        <field name="Defect_Description" width="300" />
+    </displayfields>
+    <valuefields>
+        <field name="Defect_Code" fname="Defect_Type" />
+        <field name="Defect_Description" fname="Defect_Description" />
+        <field name="DEFECTS_ID" fname="DEFECTS_ID" />
+    </valuefields>
+    <sql>
+        <str name="Select" value="Select * from somersetcr.Defects " />
+        <str name="And" value="" />
+        <str name="Order" value="order by Defect_Description" />
+    </sql>
+</list>
+

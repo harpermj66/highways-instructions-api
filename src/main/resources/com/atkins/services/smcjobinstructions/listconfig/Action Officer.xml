@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+    <list type="common" keysrequired="yes" owner="" tableName="" keyedOnUser="no" />
+    <displayfields>
+        <field name="OFFICER" width="400" />
+    </displayfields>
+    <valuefields>
+        <field name="OFFICER" fname="ACTION_OFFICER" />
+    </valuefields>
+    <sql>
+        <str name="Select" value="Select OFFICER from somersetcr.Officers " />
+        <str name="And" value="" />
+        <str name="Order" value="order by Officer" />
+    </sql>
+</list>
+

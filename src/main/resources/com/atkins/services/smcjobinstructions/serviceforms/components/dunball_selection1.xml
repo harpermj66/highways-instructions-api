@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+    <masterkey keyname="JI_ID" idref="JI_ID" initialorderfield="JI_ID" />
+    <deletes allow="no" />
+    <groupings>
+        <grouping caption="Job Information" height="150" nooffields="8" />
+        <grouping caption="Work Details" height="300" nooffields="8" />
+        <grouping caption="" height="0" nooffields="1" />
+    </groupings>
+    <basicattributes caption="legacy component caption" screenid="legacy screen id" offsetheight="-1" nooffields="17" />
+    <labelfields>
+        <labelfield caption="Priority Code" fname="PRIORITY_CODE" ftype="String" auto="no" lxpos="2" lypos="0" lgridwidth="1" type="NETextField" fwidth="60" fheight="21" fxpos="3" fypos="0" fgridwidth="12" total="no" width="4" nullable="yes" listfn="" listmasterkey="" />
+        <labelfield caption="Priority" fname="PRIORITY" ftype="String" auto="no" lxpos="0" lypos="0" lgridwidth="1" type="ScrollableLUTextField" fwidth="160" fheight="21" fxpos="1" fypos="0" fgridwidth="1" total="no" width="20" nullable="yes" listfn="/com/atkins/services/somersetcr/listconfig/Priority.xml" listmasterkey="" />
+        <labelfield caption="Gang Ref." fname="GANG" ftype="String" auto="no" lxpos="0" lypos="1" lgridwidth="1" type="ScrollableLUTextField" fwidth="150" fheight="21" fxpos="1" fypos="1" fgridwidth="1" total="no" width="25" nullable="yes" listfn="/com/atkins/services/somersetcr/listconfig/Gangs.xml" listmasterkey="" />
+        <labelfield caption="Estimated Duration [hr]" fname="EST_DURATION" ftype="String" auto="no" lxpos="2" lypos="1" lgridwidth="1" type="TextField" fwidth="100" fheight="21" fxpos="3" fypos="1" fgridwidth="1" total="no" width="10" nullable="yes" listfn="" listmasterkey="" />
+        <labelfield caption="Time Submitted to Gang" fname="TIME_SUBMITTED" ftype="Date" auto="no" lxpos="0" lypos="2" lgridwidth="1" type="DateTimeTextField" fwidth="150" fheight="21" fxpos="1" fypos="2" fgridwidth="1" total="no" nullable="yes" listfn="" listmasterkey="" />
+        <labelfield caption="Time Arrived on Site" fname="TIME_ARRIVED" ftype="Date" auto="no" lxpos="0" lypos="3" lgridwidth="1" type="DateTimeTextField" fwidth="150" fheight="21" fxpos="1" fypos="3" fgridwidth="1" total="no" nullable="yes" listfn="" listmasterkey="" />
+        <labelfield caption="Time Completed" fname="TIME_COMPLETED" ftype="String" auto="no" lxpos="2" lypos="3" lgridwidth="1" type="DateTimeTextField" fwidth="150" fheight="21" fxpos="3" fypos="3" fgridwidth="1" total="no" precision="10" scale="0" nullable="yes" listfn="" listmasterkey="" />
+        <labelfield caption="Confirm Enquiry No." fname="CONFIRM_ENQUIRY" ftype="String" auto="no" lxpos="0" lypos="4" lgridwidth="1" type="TextField" fwidth="60" fheight="21" fxpos="1" fypos="4" fgridwidth="1" total="no" width="10" nullable="no" listfn="" listmasterkey="" />
+        <labelfield caption="Utility Yes/No" fname="UTILITY_PLANS" ftype="String" auto="no" lxpos="0" lypos="0" lgridwidth="1" type="Boolean" fwidth="100" fheight="21" fxpos="1" fypos="0" fgridwidth="1" total="no" width="3" nullable="yes" listfn="" listmasterkey="" />
+        <labelfield caption="Res Auth" fname="RES_AUTH" ftype="String" auto="no" lxpos="2" lypos="0" lgridwidth="1" type="NETextField" fwidth="160" fheight="21" fxpos="3" fypos="0" fgridwidth="1" total="no" width="10" nullable="yes" listfn="" listmasterkey="" />
+        <labelfield caption="Location" fname="LOCATION" ftype="String" auto="no" lxpos="0" lypos="1" lgridwidth="1" type="Comments" fwidth="500" fheight="60" fxpos="1" fypos="1" fgridwidth="12" total="no" width="1000" nullable="yes" listfn="" listmasterkey="" />        
+        <labelfield caption="Feature" fname="FEATURE" ftype="String" auto="no" lxpos="0" lypos="2" lgridwidth="1" type="ScrollableLUTextField" fwidth="200" fheight="21" fxpos="1" fypos="2" fgridwidth="1" total="no" width="50" nullable="yes" listfn="/com/atkins/services/somersetcr/listconfig/Features.xml" listmasterkey="" />        
+        <labelfield caption="Feature Code" fname="FEATURE_CODE" ftype="String" auto="no" lxpos="2" lypos="2" lgridwidth="1" type="NETextField" fwidth="100" fheight="21" fxpos="3" fypos="2" fgridwidth="1" total="no" width="10" nullable="yes" listfn="" listmasterkey="" />
+        <labelfield caption="Defect" fname="DEFECT_DESCRIPTION" ftype="String" auto="no" lxpos="0" lypos="3" lgridwidth="1" type="ScrollableLUTextField" fwidth="200" fheight="21" fxpos="1" fypos="3" fgridwidth="1" total="no" width="25" nullable="yes" listfn="/com/atkins/services/somersetcr/listconfig/Defect_Type.xml" listmasterkey="" />
+        <labelfield caption="Defect Type" fname="DEFECT_TYPE" ftype="String" auto="no" lxpos="2" lypos="3" lgridwidth="1" type="NETextField" fwidth="100" fheight="21" fxpos="3" fypos="3" fgridwidth="1" total="no" width="10" nullable="yes" listfn="" listmasterkey="" />
+        <labelfield caption="Defect Notes" fname="DEFECT_NOTES" ftype="String" auto="no" lxpos="0" lypos="4" lgridwidth="1" type="Comments" fwidth="500" fheight="60" fxpos="1" fypos="4" fgridwidth="12" total="no" width="25" nullable="yes" listfn="" listmasterkey="" />  
+        <labelfield caption="JI_ID" fname="JI_ID" ftype="Number" auto="yes" lxpos="0" lypos="0" lgridwidth="1" type="HTextField" fwidth="100" fheight="21" fxpos="1" fypos="0" fgridwidth="1" total="no" width="0" nullable="no" listfn="" listmasterkey="" />
+    </labelfields>
+</component>
+

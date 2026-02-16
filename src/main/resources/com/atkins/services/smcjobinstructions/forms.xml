@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serviceforms base="/com/atkins/services">
+    <paths path="/smcjobinstructions/serviceforms">
+        <name name="Job_Instructions" menu="Job Instructions" openedIcon="/images/serviceFormOpened.gif" closedIcon="/images/serviceFormClosed.gif" width="765" height="640" formOrder="0" />
+        <name name="Maintenance" menu="Maintain Lists" openedIcon="/images/serviceFormOpened.gif" closedIcon="/images/serviceFormClosed.gif" width="770" height="580" formOrder="2" />
+        <name name="Job Instruction Allocation" menu="Job Instruction Allocation" openedIcon="/images/serviceFormOpened.gif" closedIcon="/images/serviceFormClosed.gif" width="750" height="610" formOrder="1" />
+    </paths>
+</serviceforms>
+

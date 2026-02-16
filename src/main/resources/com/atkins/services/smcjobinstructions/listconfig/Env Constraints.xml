@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+    <list type="common" keysrequired="no" keyedOnUser="no" />
+    <displayfields>
+        <field name="Constraint" width="100" />
+    </displayfields>
+    <valuefields>
+        <field name="Job_Assessment_Contraints_ID" fname="Job_Assessment_Contraints_ID" />
+        <field name="Constraint" fname="Constraint" />
+    </valuefields>
+    <filters>
+        <filter filterField="JOB_ASSESSMENT_TYPE_ID" filterComponent="Constraints" filterComponentField="JOB_ASSESSMENT_TYPE_ID" dataType="Number" value="" />
+    </filters>
+    <sql>
+        <str name="Select" value="Select Job_Assessment_Contraints_ID, Constraint from somersetcr.Job_Assessment_Contraints" />
+        <str name="And" value="" />
+        <str name="Order" value="" />
+    </sql>
+</list>
+

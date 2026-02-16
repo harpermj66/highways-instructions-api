@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+    <masterkey keyname="Action_Officers_ID" idref="Action_Officers_ID" initialorderfield="Action_Officers_ID" />
+    <deletes allow="no" />
+    <groupings>
+        <grouping caption="Action Officers" height="0" nooffields="0" />
+    </groupings>
+    <basicattributes caption="legacy component caption" screenid="legacy screen id" offsetheight="-1" nooffields="1" />
+    <labelfields>
+        <labelfield caption="Action Officers" passFail="no" useLabel="no" hint="" fname="Action Officers" ftype="String" auto="no" lxpos="0" lypos="0" lgridwidth="0" type="TextField" fwidth="0" fheight="0" fxpos="0" fypos="0" fgridwidth="0" total="no" width="0" nullable="no" listfn="" listmasterkey="" />
+    </labelfields>
+</component>
+

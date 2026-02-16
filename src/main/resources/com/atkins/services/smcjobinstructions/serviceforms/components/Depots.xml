@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+    <masterkey keyname="DEPOT_ID" idref="DEPOT_ID" initialorderfield="DEPOT_ID" />
+    <deletes allow="no" />
+    <groupings>
+        <grouping caption="Depots" height="0" nooffields="1" groupOrder="0" fontSize="-1" fontColor="Default" fontBold="No" groupType="Bold" />
+        <grouping caption="Key Group" height="0" nooffields="1" groupOrder="0" fontSize="-1" fontColor="Default" fontBold="No" groupType="Bold" />
+    </groupings>
+    <basicattributes caption="legacy component caption" screenid="legacy screen id" offsetheight="-1" nooffields="2" />
+    <labelfields>
+        <labelfield caption="Depot" passFail="no" useLabel="no" hint="" fname="DEPOT" ftype="String" auto="no" lxpos="0" lypos="0" lgridwidth="1" type="TextField" fwidth="100" fheight="21" fxpos="1" fypos="0" fgridwidth="1" total="no" fieldOrder="0" width="50" nullable="no" listfn="" listmasterkey="" />
+        <labelfield caption="DEPOT_ID" passFail="no" useLabel="no" hint="" fname="DEPOT_ID" ftype="Number" auto="yes" lxpos="0" lypos="0" lgridwidth="1" type="HTextField" fwidth="100" fheight="0" fxpos="1" fypos="0" fgridwidth="1" total="no" fieldOrder="0" precision="10" scale="0" nullable="no" listfn="" listmasterkey="" />
+    </labelfields>
+</component>
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+    <list type="common" keysrequired="no" keyedOnUser="no" />
+    <displayfields>
+        <field name="Assessment_Type" width="100" />
+    </displayfields>
+    <valuefields>
+        <field name="Assessment_Type" fname="Type" />
+        <field name="Job_Assessment_Type_ID" fname="Job_Assessment_Type_ID" />
+    </valuefields>
+    <sql>
+        <str name="Select" value="Select * from somersetcr.Job_Assessment_Type" />
+        <str name="And" value="" />
+        <str name="Order" value=" order by Assessment_Type" />
+    </sql>
+</list>
+

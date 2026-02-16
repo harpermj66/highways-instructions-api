@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+    <masterkey keyname="Glaston_details_ID" idref="Glaston_details_ID" initialorderfield="Glaston_details_ID" />
+    <deletes allow="no" />
+    <groupings>
+        <grouping caption="Live Jobs" height="320" nooffields="0" />
+    </groupings>
+    <basicattributes caption="legacy component caption" screenid="legacy screen id" offsetheight="-1" nooffields="0" />
+</component>
+

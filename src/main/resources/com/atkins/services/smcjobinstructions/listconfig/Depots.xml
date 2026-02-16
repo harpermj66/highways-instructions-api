@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+    <list type="common" keysrequired="yes" keyedOnUser="no" />
+    <displayfields>
+        <field name="Depot" width="300" />
+    </displayfields>
+    <valuefields>
+        <field name="Depot" fname="Depot" />
+        <field name="depot_id" fname="depot_id" />
+    </valuefields>
+    <sql>
+        <str name="Select" value="select depot_id, Depot from somersetcr.Depot " />
+        <str name="And" value="" />
+        <str name="Order" value=" order by Depot " />
+    </sql>
+</list>
+

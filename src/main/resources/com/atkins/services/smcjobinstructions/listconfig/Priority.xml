@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+    <list type="common" keysrequired="yes" keyedOnUser="no" />
+    <displayfields>
+        <field name="Priority" width="300" />
+        <field name="Priority_Code" width="100" />
+    </displayfields>
+    <valuefields>
+        <field name="Priority" fname="Priority" />
+        <field name="Priority_Code" fname="Priority_Code" />
+        <field name="Priority_ID" fname="Priority_ID" />
+    </valuefields>
+    <sql>
+        <str name="Select" value="Select * from somersetcr.Priority " />
+        <str name="And" value="" />
+        <str name="Order" value="order by Priority" />
+    </sql>
+</list>
+

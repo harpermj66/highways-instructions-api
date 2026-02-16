@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+    <list type="common" keysrequired="no" keyedOnUser="no" />
+    <displayfields>
+        <field name="Description" width="250" />
+    </displayfields>
+    <valuefields>
+        <field name="Description" fname="REASON_FOR_OVERRIDE" />
+        <field name="Competency_Override_ID" fname="Competency_Override_ID" />
+    </valuefields>
+    <sql>
+        <str name="Select" value="Select * from somersetcr.competency_override" />
+        <str name="And" value="" />
+        <str name="Order" value="" />
+    </sql>
+</list>
+

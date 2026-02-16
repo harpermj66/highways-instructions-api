@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+    <masterkey keyname="JI_ID" idref="JI_ID" initialorderfield="JI_ID" />
+    <deletes allow="no" />
+    <groupings>
+        <grouping caption="Job Instructions" height="0" nooffields="6" groupOrder="0" fontSize="-1" fontColor="Default" fontBold="No" groupType="Bold" />
+        <grouping caption="Key Group" height="0" nooffields="1" groupOrder="0" fontSize="-1" fontColor="Default" fontBold="No" groupType="Bold" />
+    </groupings>
+    <basicattributes caption="legacy component caption" screenid="legacy screen id" offsetheight="-1" nooffields="7" />
+    <labelfields>
+        <labelfield caption="Job Instruction No" passFail="no" useLabel="no" indexed="no" hint="" fname="JOB_INSTRUCTION_NO" ftype="Number" auto="no" lxpos="0" lypos="0" lgridwidth="1" type="NETextField" fwidth="90" fheight="21" fxpos="1" fypos="0" fgridwidth="1" total="no" fieldOrder="0" precision="10" scale="0" nullable="yes" listfn="" listmasterkey="" />
+        <labelfield caption="Date Initiated" passFail="no" useLabel="no" indexed="no" hint="" fname="DATE_CREATED" ftype="Date" auto="no" lxpos="0" lypos="0" lgridwidth="1" type="NEDateTimeTextField" fwidth="90" fheight="21" fxpos="1" fypos="0" fgridwidth="1" total="no" fieldOrder="0" nullable="yes" listfn="" listmasterkey="" />
+        <labelfield caption="Priority" passFail="no" useLabel="no" indexed="no" hint="" fname="PRIORITY" ftype="String" auto="no" lxpos="0" lypos="0" lgridwidth="1" type="NETextField" fwidth="100" fheight="21" fxpos="1" fypos="0" fgridwidth="1" total="no" fieldOrder="0" width="100" nullable="yes" listfn="" listmasterkey="" />
+        <labelfield caption="Work Type" passFail="no" useLabel="no" indexed="no" hint="" fname="DEFECT_DESCRIPTION" ftype="String" auto="no" lxpos="0" lypos="0" lgridwidth="1" type="NETextField" fwidth="150" fheight="21" fxpos="1" fypos="0" fgridwidth="1" total="no" fieldOrder="0" width="100" nullable="yes" listfn="" listmasterkey="" />
+        <labelfield caption="Area" passFail="no" useLabel="no" indexed="no" hint="" fname="DEPOT" ftype="String" auto="no" lxpos="0" lypos="0" lgridwidth="1" type="NETextField" fwidth="150" fheight="21" fxpos="1" fypos="0" fgridwidth="1" total="no" fieldOrder="0" width="100" nullable="no" listfn="" listmasterkey="" />
+        <labelfield caption="Assigned" passFail="no" useLabel="no" indexed="no" hint="" fname="ASSIGNMENT_STATUS" ftype="String" auto="no" lxpos="0" lypos="0" lgridwidth="1" type="NETextField" fwidth="120" fheight="21" fxpos="1" fypos="0" fgridwidth="1" total="no" fieldOrder="0" width="100" nullable="no" listfn="" listmasterkey="" />
+        <labelfield caption="JI_ID" passFail="no" useLabel="no" indexed="no" hint="" fname="JI_ID" ftype="Number" auto="yes" lxpos="0" lypos="0" lgridwidth="1" type="HTextField" fwidth="100" fheight="21" fxpos="1" fypos="0" fgridwidth="1" total="no" fieldOrder="0" precision="10" scale="0" nullable="no" listfn="" listmasterkey="" />
+    </labelfields>
+</component>
+

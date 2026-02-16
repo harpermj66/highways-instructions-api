@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+    <list type="common" keysrequired="yes" owner="" tableName="" keyedOnUser="no" />
+    <displayfields>
+        <field name="Feature Code" width="100" />
+        <field name="Feature_Description" width="300" />
+    </displayfields>
+    <valuefields>
+        <field name="Feature Code" fname="Feature_Type" />
+        <field name="Description" fname="Feature_Description" />
+    </valuefields>
+    <sql>
+        <str name="Select" value="Select Feature_Code, Feature_Description from somersetcr.Features " />
+        <str name="And" value="" />
+        <str name="Order" value="order by Job_Number" />
+    </sql>
+</list>
+

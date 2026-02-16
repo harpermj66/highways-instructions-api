@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+    <masterkey keyname="DEFECTS_ID" idref="DEFECTS_ID" initialorderfield="DEFECTS_ID" />
+    <deletes allow="yes" />
+    <groupings>
+        <grouping caption="Defects" height="0" nooffields="3" groupOrder="0" fontSize="-1" fontColor="" fontBold="Yes" groupType="Bold" />
+        <grouping caption="Creation Information" height="55" nooffields="2" groupOrder="1" fontSize="-1" fontColor="Default" fontBold="No" groupType="Bold" />
+        <grouping caption="Key Group" height="0" nooffields="1" groupOrder="2" fontSize="-1" fontColor="Default" fontBold="No" groupType="Bold" />
+    </groupings>
+    <basicattributes caption="legacy component caption" screenid="legacy screen id" offsetheight="-1" nooffields="6" />
+    <labelfields>
+        <labelfield caption="Feature" passFail="no" useLabel="yes" indexed="no" hint="" fname="FEATURE" ftype="String" auto="no" lxpos="0" lypos="0" lgridwidth="1" type="TextField" fwidth="100" fheight="21" fxpos="1" fypos="0" fgridwidth="1" total="no" fieldOrder="0" width="25" nullable="yes" listfn="" listmasterkey="" />
+        <labelfield caption="Defect Description" passFail="no" useLabel="yes" indexed="no" hint="" fname="DEFECT_DESCRIPTION" ftype="String" auto="no" lxpos="0" lypos="0" lgridwidth="1" type="TextField" fwidth="300" fheight="21" fxpos="1" fypos="0" fgridwidth="1" total="no" fieldOrder="0" width="25" nullable="yes" listfn="" listmasterkey="" />
+        <labelfield caption="Defect Code" passFail="no" useLabel="yes" indexed="no" hint="" fname="DEFECT_CODE" ftype="String" auto="no" lxpos="0" lypos="0" lgridwidth="1" type="TextField" fwidth="100" fheight="21" fxpos="1" fypos="0" fgridwidth="1" total="no" fieldOrder="0" width="10" nullable="no" listfn="" listmasterkey="" />
+        <labelfield caption="Date Created" passFail="no" useLabel="no" indexed="no" hint="" fname="DATE_CREATED" ftype="Date" auto="yes" lxpos="0" lypos="0" lgridwidth="0" type="NEDateTimeTextField" fwidth="120" fheight="21" fxpos="0" fypos="0" fgridwidth="0" total="no" fieldOrder="0" nullable="no" listfn="" listmasterkey="" />
+        <labelfield caption="Created By" passFail="no" useLabel="no" indexed="no" hint="" fname="CREATED_BY" ftype="String" auto="no" lxpos="2" lypos="0" lgridwidth="0" type="NETextField" fwidth="80" fheight="21" fxpos="0" fypos="0" fgridwidth="0" total="no" fieldOrder="0" width="25" nullable="no" listfn="" listmasterkey="" />
+        <labelfield caption="DEFECTS_ID" passFail="no" useLabel="no" indexed="no" hint="" fname="DEFECTS_ID" ftype="Number" auto="yes" lxpos="0" lypos="0" lgridwidth="0" type="HTextField" fwidth="0" fheight="21" fxpos="0" fypos="0" fgridwidth="0" total="no" fieldOrder="0" precision="10" scale="0" nullable="no" listfn="" listmasterkey="" />
+    </labelfields>
+</component>
+

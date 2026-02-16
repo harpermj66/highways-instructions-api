@@ -1,0 +1,17 @@
+under resources/com/atkins there are a series of xml configuration files directories to use to generate entities.
+Files beginning with <ServiceForm> contain <servicecomponent> elements which have a properties:
+"table" where the suffix is the table name.
+"idref" which is the name of the primary key
+"componentpropertiesfn" which is the name of a file which contains more of the entity details.
+"masteridref" which if has non zero string value refers to the "idref" of the top most in the file <servicecomponent> that is it's parent in terms of entity hierarchy. A concrete example of this is in Job_Instructions.xml where <servicecomponent title="Job Instruction" idref="JI_ID" ... would be the parent entity of <servicecomponent title="Risk Assessment SORs" masteridref="JI_ID" ..> where the @OneToMany relationship would be generated in the JobInstruction entity
+isView" if equals yes sbould be ignored.
+
+Parse the files and create entities and relationships as indicated by the above information
+
+files specified by "componentpropertiesfn" have within the <labelfield> element more field names where properties:
+"fname" is the field name,
+"ftype" is the database field type, ie. String. If ftype is "Number" then precision and scale can by used to side the database field.
+"nullable" refers to nullability
+
+
+

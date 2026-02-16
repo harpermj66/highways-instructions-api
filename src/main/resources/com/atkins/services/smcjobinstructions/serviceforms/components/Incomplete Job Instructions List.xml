@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+    <masterkey keyname="JI_ID" idref="JI_ID" initialorderfield="JI_ID" />
+    <deletes allow="no" />
+    <groupings>
+        <grouping caption="Incomplete Job Instructions" height="0" nooffields="7" groupOrder="0" fontSize="-1" fontColor="Default" fontBold="No" groupType="Bold" />
+        <grouping caption="Key Group" height="0" nooffields="1" groupOrder="0" fontSize="-1" fontColor="Default" fontBold="No" groupType="Bold" />
+    </groupings>
+    <basicattributes caption="legacy component caption" screenid="legacy screen id" offsetheight="-1" nooffields="8" />
+    <labelfields>
+        <labelfield caption="Confirm Enquiry No" passFail="no" useLabel="no" hint="" fname="CONFIRM_ENQUIRY" ftype="String" auto="no" lxpos="0" lypos="0" lgridwidth="1" type="TextField" fwidth="100" fheight="0" fxpos="1" fypos="0" fgridwidth="1" total="no" fieldOrder="0" width="10" nullable="no" listfn="" listmasterkey="" />
+        <labelfield caption="Location" passFail="no" useLabel="no" hint="" fname="Location" ftype="String" auto="no" lxpos="0" lypos="0" lgridwidth="1" type="TextField" fwidth="195" fheight="0" fxpos="1" fypos="0" fgridwidth="1" total="no" fieldOrder="1" width="1000" nullable="no" listfn="" listmasterkey="" />
+        <labelfield caption="Priority" passFail="no" useLabel="no" hint="" fname="Priority" ftype="String" auto="no" lxpos="0" lypos="0" lgridwidth="1" type="TextField" fwidth="50" fheight="0" fxpos="1" fypos="0" fgridwidth="1" total="no" fieldOrder="2" width="20" nullable="no" listfn="" listmasterkey="" />
+        <labelfield caption="Gang Ref" passFail="no" useLabel="no" hint="" fname="Gang" ftype="String" auto="no" lxpos="0" lypos="0" lgridwidth="1" type="TextField" fwidth="100" fheight="0" fxpos="1" fypos="0" fgridwidth="1" total="no" fieldOrder="3" width="0" nullable="no" listfn="" listmasterkey="" />
+        <labelfield caption="Estimated Duration" passFail="no" useLabel="no" hint="" fname="EST_DURATION" ftype="String" auto="no" lxpos="0" lypos="0" lgridwidth="1" type="TextField" fwidth="100" fheight="0" fxpos="1" fypos="0" fgridwidth="1" total="no" fieldOrder="4" width="20" nullable="no" listfn="" listmasterkey="" />
+        <labelfield caption="Due Date" passFail="no" useLabel="no" hint="" fname="Due_Date" ftype="Date" auto="no" lxpos="0" lypos="0" lgridwidth="1" type="TextField" fwidth="100" fheight="0" fxpos="1" fypos="0" fgridwidth="1" total="no" fieldOrder="5" nullable="no" listfn="" listmasterkey="" />
+        <labelfield caption="Status" passFail="no" useLabel="no" hint="" fname="Status" ftype="String" auto="no" lxpos="0" lypos="0" lgridwidth="1" type="TextField" fwidth="100" fheight="0" fxpos="1" fypos="0" fgridwidth="1" total="no" fieldOrder="6" width="0" nullable="no" listfn="" listmasterkey="" />
+        <labelfield caption="JI_ID" passFail="no" useLabel="no" hint="" fname="JI_ID" ftype="Number" auto="yes" lxpos="0" lypos="0" lgridwidth="1" type="HTextField" fwidth="100" fheight="0" fxpos="1" fypos="0" fgridwidth="1" total="no" fieldOrder="0" precision="10" scale="0" nullable="no" listfn="" listmasterkey="" />
+    </labelfields>
+</component>
+

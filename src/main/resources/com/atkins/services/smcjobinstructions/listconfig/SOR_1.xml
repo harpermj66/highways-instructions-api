@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+    <list type="database" keysrequired="no" keyedOnUser="no" />
+    <displayfields>
+        <field name="SOR_Description" width="300" />
+        <field name="SOR_Code" width="100" />
+        <field name="RATE" width="100" />
+        <field name="UOM" width="100" />
+    </displayfields>
+    <valuefields>
+        <field name="SOR_Code" fname="SOR_Code" />
+        <field name="SOR_DESCRIPTION" fname="SOR_Description" />
+        <field name="RATE" fname="RATE" />
+        <field name="UOM" fname="UOM" />
+    </valuefields>
+    <sql>
+        <str name="Select" value="Select SOR_Code, SOR_Description,UOM,RATE from somersetcr.schedule_of_rates " />
+        <str name="And" value="" />
+        <str name="Order" value="order by SOR_Description" />
+    </sql>
+</list>
+

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServiceForm>
+    <serviceform id="SMCR.JobInstructions" type="Tabbed" export="Not Used Yet - yes, no" configLocation="Not Used Yet - config file for export of service" outputLocation="Not Used Yet - where the output oges">
+        <servicepage title="Job Instruction" type="singletabular" pageOrder="0" horizontalsplit="100">
+            <servicecomponent owner="somersetcr" componentOrder="0" title="Job Instruction" type="tabular" table="somersetcr.Job_Instruction" refField="JOB_INSTRUCTION_NO" packetrecordcount="200" maxrecordcount="500" idref="JI_ID" updatekey="JI_ID" sitekey="legacy" componentpropertiesfn="/com/atkins/services/smcjobinstructions/serviceforms/components/Job_Instruction_Input.xml" requiresglobalkeys="yes" globalkeyname="location.selector" globalkeyselectorclasspath="com.atkins.framework.data.keyselectors.RunLocationSelector" parentcomponenttitle="" masteridref="" requiresAdditionalKeys="no" showOnlyCurrentUserRecords="no" implementsRecordLock="yes" showNavigator="yes" isView="No">
+                <commands reports="no" reload="no" create="yes" delete="yes" save="yes" edit="yes" help="no" search="yes" retrieve="no" quicksearch="no" total="no" />
+                <additionalcommands>
+                    <command name="RunKPI" disabledIcon="/images/ap_export_timesheets.png" inactiveIcon="/images/ap_export_timesheets.png" enabledIcon="/images/ap_export_timesheets_32.png" tooltip="Show KPIs" classPath="extensions.somersetcr.commands.RunKPI" />
+                </additionalcommands>
+                <posts>
+                    <post type="prepost" class="extensions.somersetcr.preposts.SetStatus" />
+                    <post type="postpost" class="extensions.somersetcr.postposts.RecalculateDueDate" />
+                    <post type="postpost" class="extensions.somersetcr.postposts.UpdateJobInstruction" />
+                </posts>
+                <nonposts />
+                <report reportName="Job Instruction" type="CSV" available="yes" />
+            </servicecomponent>
+        </servicepage>
+        <servicepage title="Risk Assessment/Treatment Model SORs" type="duallist" pageOrder="1" horizontalsplit="300">
+            <servicecomponent owner="somersetcr" componentOrder="0" title="Treatment Model SORs" type="list" table="somersetcr.SOR_Items" refField="" packetrecordcount="200" maxrecordcount="500" idref="SOR_ITEMS_ID" updatekey="SOR_ITEMS_ID" sitekey="legacy" componentpropertiesfn="/com/atkins/services/smcjobinstructions/serviceforms/components/SOR Items Treatment Model.xml" requiresglobalkeys="yes" globalkeyname="location.selector" globalkeyselectorclasspath="com.atkins.framework.data.keyselectors.RunLocationSelector" parentcomponenttitle="Job Instruction" masteridref="JI_ID" requiresAdditionalKeys="yes" showOnlyCurrentUserRecords="no" implementsRecordLock="no" showNavigator="yes" isView="No">
+                <commands reports="no" reload="no" create="yes" delete="yes" save="yes" edit="yes" help="no" search="no" retrieve="no" quicksearch="no" total="no" />
+                <additionalkeys foundInComponent="">
+                    <key name="SOR_TYPE" value="TM" keytype="String" />
+                </additionalkeys>
+                <posts>
+                    <post type="postpost" class="extensions.somersetcr.postposts.CheckSkillsMapping" />
+                    <post type="postpost" class="extensions.somersetcr.postposts.UpdateRiskAssessment" />
+                </posts>
+                <nonposts>
+                    <nonpost type="postdelete" class="extensions.somersetcr.postposts.UpdateTreatmentModel" />
+                </nonposts>
+                <report reportName="Treatment Model SORs" type="CSV" available="yes" />
+            </servicecomponent>
+            <servicecomponent owner="somersetcr" componentOrder="1" title="Risk Assessment SORs" type="list" table="somersetcr.SOR_Items" refField="" packetrecordcount="200" maxrecordcount="500" idref="SOR_ITEMS_ID" updatekey="SOR_ITEMS_ID" sitekey="legacy" componentpropertiesfn="/com/atkins/services/smcjobinstructions/serviceforms/components/Sor Items Risk Assessments.xml" requiresglobalkeys="yes" globalkeyname="location.selector" globalkeyselectorclasspath="com.atkins.framework.data.keyselectors.RunLocationSelector" parentcomponenttitle="Job Instruction" masteridref="JI_ID" requiresAdditionalKeys="yes" showOnlyCurrentUserRecords="no" implementsRecordLock="no" showNavigator="yes" isView="No">
+                <commands reports="no" reload="no" create="yes" delete="yes" save="yes" edit="yes" help="no" search="no" retrieve="no" quicksearch="no" total="no" />
+                <additionalkeys foundInComponent="">
+                    <key name="SOR_TYPE" value="RA" keytype="String" />
+                </additionalkeys>
+                <posts>
+                    <post type="postpost" class="extensions.somersetcr.postposts.CheckSkillsMapping" />
+                    <post type="postpost" class="extensions.somersetcr.postposts.UpdateTreatmentModel" />
+                </posts>
+                <nonposts>
+                    <nonpost type="postdelete" class="extensions.somersetcr.postposts.UpdateRiskAssessment" />
+                </nonposts>
+                <report reportName="Risk Assessment SORs" type="CSV" available="yes" />
+            </servicecomponent>
+        </servicepage>
+        <servicepage title="Job Assessment" type="tabularlist" pageOrder="2" horizontalsplit="300">
+            <servicecomponent owner="somersetcr" componentOrder="0" title="Stats Drawings" type="tabular" table="somersetcr.Stats_Drawings" refField="" packetrecordcount="200" maxrecordcount="500" idref="STATS_DRAWINGS_ID" updatekey="STATS_DRAWINGS_ID" sitekey="legacy" componentpropertiesfn="/com/atkins/services/smcjobinstructions/serviceforms/components/Stats Drawings.xml" requiresglobalkeys="no" globalkeyname="location.selector" globalkeyselectorclasspath="com.atkins.framework.data.keyselectors.RunLocationSelector" parentcomponenttitle="Job Instruction" masteridref="JI_ID" requiresAdditionalKeys="no" showOnlyCurrentUserRecords="no" implementsRecordLock="no" showNavigator="yes" isView="No">
+                <commands reports="no" reload="no" create="no" delete="yes" save="yes" edit="yes" help="no" search="no" retrieve="no" quicksearch="no" total="no" />
+                <additionalcommands>
+                    <command name="SCRBulletin" disabledIcon="/images/ap_jde.png" inactiveIcon="/images/ap_jde.png" enabledIcon="/images/ap_jde_32.png" tooltip="Bulletin" classPath="extensions.somersetcr.commands.SCRBulletin" />
+                </additionalcommands>
+                <posts>
+                    <post type="prepost" class="extensions.somersetcr.preposts.CalculateDueDate" />
+                    <post type="postpost" class="extensions.somersetcr.postposts.UpdateJobAssessment" />
+                </posts>
+                <nonposts />
+                <report reportName="Stats Drawings" type="CSV" available="yes" />
+            </servicecomponent>
+            <servicecomponent owner="somersetcr" componentOrder="1" title="Constraints" type="list" table="somersetcr.Job_Assessment" refField="" packetrecordcount="200" maxrecordcount="500" idref="JOB_ASSESSMENT_ID" updatekey="JOB_ASSESSMENT_ID" sitekey="legacy" componentpropertiesfn="/com/atkins/services/smcjobinstructions/serviceforms/components/Job Assessment.xml" requiresglobalkeys="no" globalkeyname="location.selector" globalkeyselectorclasspath="com.atkins.framework.data.keyselectors.RunLocationSelector" parentcomponenttitle="Stats Drawings" masteridref="STATS_DRAWINGS_ID" requiresAdditionalKeys="no" showOnlyCurrentUserRecords="no" implementsRecordLock="no" showNavigator="yes" isView="No">
+                <commands reports="no" reload="no" create="yes" delete="yes" save="yes" edit="yes" help="no" search="no" retrieve="no" quicksearch="no" total="no" />
+                <posts />
+                <nonposts />
+                <report reportName="Constraints" type="CSV" available="yes" />
+            </servicecomponent>
+        </servicepage>
+        <servicepage title="Gang Assignment" type="tabularlist" pageOrder="3" horizontalsplit="310">
+            <servicecomponent owner="somersetcr" componentOrder="0" title="Gang Assignment" type="tabular" table="somersetcr.Gang_Assignment" refField="" packetrecordcount="200" maxrecordcount="500" idref="GANG_ASSIGNMENT_ID" updatekey="GANG_ASSIGNMENT_ID" sitekey="legacy" componentpropertiesfn="/com/atkins/services/smcjobinstructions/serviceforms/components/Completed_Job.xml" requiresglobalkeys="no" globalkeyname="location.selector" globalkeyselectorclasspath="com.atkins.framework.data.keyselectors.RunLocationSelector" parentcomponenttitle="Job Instruction" masteridref="JI_ID" requiresAdditionalKeys="no" showOnlyCurrentUserRecords="no" implementsRecordLock="no" showNavigator="yes" isView="No">
+                <commands reports="no" reload="no" create="yes" delete="yes" save="yes" edit="yes" help="no" search="no" retrieve="no" quicksearch="no" total="no" />
+                <additionalcommands>
+                    <command name="Submit to Gang" disabledIcon="/images/ap_submit_timesheet.png" inactiveIcon="/images/ap_submit_timesheet.png" enabledIcon="/images/ap_submit_timesheet_32.png" tooltip="Submit Job to Gang" classPath="extensions.somersetcr.commands.SubmitToGang" />
+                </additionalcommands>
+                <posts>
+                    <post type="prepost" class="extensions.somersetcr.preposts.CheckCompletionNotes" />
+                    <post type="prepost" class="extensions.somersetcr.commands.CalculateProgrammedStartDate" />
+                    <post type="postpost" class="extensions.somersetcr.postposts.UpdateGangAssignment" />
+                </posts>
+                <nonposts>
+                    <nonpost type="postdelete" class="extensions.somersetcr.postposts.UpdateGangAssignment" />
+                </nonposts>
+                <report reportName="Gang Assignment" type="CSV" available="yes" />
+            </servicecomponent>
+            <servicecomponent owner="somersetcr" componentOrder="1" title="Completed SOR Item Measures" type="list" table="somersetcr.SOR_Items" refField="" packetrecordcount="200" maxrecordcount="500" idref="SOR_ITEMS_ID" updatekey="SOR_ITEMS_ID" sitekey="legacy" componentpropertiesfn="/com/atkins/services/smcjobinstructions/serviceforms/components/SOR Items.xml" requiresglobalkeys="yes" globalkeyname="location.selector" globalkeyselectorclasspath="com.atkins.framework.data.keyselectors.RunLocationSelector" parentcomponenttitle="Job Instruction" masteridref="JI_ID" requiresAdditionalKeys="no" showOnlyCurrentUserRecords="no" implementsRecordLock="no" showNavigator="yes" isView="No">
+                <commands reports="no" reload="yes" create="yes" delete="yes" save="yes" edit="yes" help="no" search="no" retrieve="no" quicksearch="no" total="no" />
+                <posts />
+                <nonposts />
+                <report reportName="Completed SOR Item Measures" type="CSV" available="yes" />
+            </servicecomponent>
+        </servicepage>
+        <servicepage title="Action Log" type="singletabular" pageOrder="4" horizontalsplit="100">
+            <servicecomponent owner="somersetcr" componentOrder="0" title="Action Log" type="tabular" table="somersetcr.Action_Log" refField="" packetrecordcount="200" maxrecordcount="500" idref="ACTION_LOG_ID" updatekey="ACTION_LOG_ID" sitekey="legacy" componentpropertiesfn="/com/atkins/services/smcjobinstructions/serviceforms/components/Action Log.xml" requiresglobalkeys="no" globalkeyname="location.selector" globalkeyselectorclasspath="com.atkins.framework.data.keyselectors.RunLocationSelector" parentcomponenttitle="Job Instruction" masteridref="JI_ID" requiresAdditionalKeys="no" showOnlyCurrentUserRecords="no" implementsRecordLock="no" showNavigator="yes" isView="No">
+                <commands reports="no" reload="no" create="yes" delete="yes" save="yes" edit="yes" help="no" search="no" retrieve="no" quicksearch="no" total="no" />
+                <posts />
+                <nonposts />
+                <report reportName="Action Log" type="CSV" available="yes" />
+            </servicecomponent>
+        </servicepage>
+        <servicepage title="Action Log History" type="listtabular" pageOrder="5" horizontalsplit="380">
+            <servicecomponent owner="somersetcr" componentOrder="0" title="Action Log History" type="list" table="somersetcr.Action_Log" refField="" packetrecordcount="200" maxrecordcount="500" idref="ACTION_LOG_ID" updatekey="ACTION_LOG_ID" sitekey="legacy" componentpropertiesfn="/com/atkins/services/smcjobinstructions/serviceforms/components/Action Log History.xml" requiresglobalkeys="no" globalkeyname="location.selector" globalkeyselectorclasspath="com.atkins.framework.data.keyselectors.RunLocationSelector" parentcomponenttitle="Job Instruction" masteridref="JI_ID" requiresAdditionalKeys="no" showOnlyCurrentUserRecords="no" implementsRecordLock="no" showNavigator="no" isView="No">
+                <commands reports="no" reload="no" create="no" delete="no" save="no" edit="no" help="no" search="no" retrieve="no" quicksearch="no" total="no" />
+                <posts />
+                <nonposts />
+                <report reportName="Action Log History" type="CSV" available="yes" />
+            </servicecomponent>
+            <servicecomponent owner="somersetcr" componentOrder="1" title="Action Log History Detail" type="tabular" table="somersetcr.Action_Log" refField="" packetrecordcount="200" maxrecordcount="500" idref="ACTION_LOG_ID" updatekey="ACTION_LOG_ID" sitekey="legacy" componentpropertiesfn="/com/atkins/services/smcjobinstructions/serviceforms/components/Action Log History Detail.xml" requiresglobalkeys="no" globalkeyname="location.selector" globalkeyselectorclasspath="com.atkins.framework.data.keyselectors.RunLocationSelector" parentcomponenttitle="Action Log History" masteridref="ACTION_LOG_ID" requiresAdditionalKeys="no" showOnlyCurrentUserRecords="no" implementsRecordLock="no" showNavigator="yes" isView="No">
+                <commands reports="no" reload="no" create="no" delete="no" save="yes" edit="yes" help="no" search="no" retrieve="no" quicksearch="no" total="no" />
+                <posts />
+                <nonposts />
+                <report reportName="Action Log History Detail" type="CSV" available="yes" />
+            </servicecomponent>
+        </servicepage>
+    </serviceform>
+    <customreports />
+</ServiceForm>
+
