@@ -15,7 +15,7 @@ class Role {
     var id: Long? = null
 
     @Column(unique = true, nullable = false)
-    lateinit var name: String
+    var name: String = ""
 
     var description: String? = null
 }
