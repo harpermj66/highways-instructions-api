@@ -2,6 +2,7 @@ plugins {
     kotlin("jvm") version "2.3.0"
     kotlin("plugin.allopen") version "2.3.0"
     id("io.quarkus")
+    jacoco
 }
 
 repositories {
@@ -51,5 +52,12 @@ kotlin {
     compilerOptions {
         jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17
         javaParameters = true
+    }
+}
+
+tasks.withType<org.gradle.testing.jacoco.tasks.JacocoReport> {
+    reports {
+        xml.required.set(true)
+        html.required.set(true)
     }
 }
